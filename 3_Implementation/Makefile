@@ -1,10 +1,10 @@
-all: ttt
+all: abc
 
-ttt:main.o tictactoe.o
-	gcc -Wall -o ttt main.o tictactoe.o
+abc:main.o phonebook.o
+	gcc -Wall -o abc main.o phonebook.o
 
 main.o:main.c
 	gcc -c -Wall main.c
 
-tictactoe.o:tictactoe.c
-	gcc -c -Wall tictactoe.c
+phonebook.o:phonebook.c
+	gcc -c -Wall phonebook.c
